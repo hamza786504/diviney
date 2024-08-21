@@ -1,5 +1,4 @@
 import React from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 export default function register() {
   return (
     <div class="flex  items-center justify-center  bg-gradient-to-tr from-[#fcd2da] via-[#d4d2fc] to-[#daf3fc]">
