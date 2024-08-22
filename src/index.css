@@ -116,6 +116,7 @@ footer li {
   justify-content: center;
   z-index: 1000; /* Ensure the popup is above other content */
 }
+
 .popup-bg {
   background-image: url(./images/home/Blob.png);
 }
