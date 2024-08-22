@@ -15,15 +15,19 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/register" element={<Register />}></Route>
-        <Route path="/philosopher/:id?" element={<InfoGrapics />}></Route>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/admin/profileview" element={<ProfileView />}></Route>
-        <Route path="/admin/chatroom" element={<ChatRoom />}></Route>
-    
-        <Route path="/add" element={<App />}></Route>
-        <Route path="/404" element={<NotFound />}></Route>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/login" exact element={<Login />}></Route>
+        <Route path="/register" exact element={<Register />}></Route>
+        <Route path="/admin/profileview" exact element={<ProfileView />}></Route>
+        <Route path="/admin/chatroom" exact element={<ChatRoom />}></Route>
+
+
+        <Route path="/404" exact element={<NotFound />}></Route>
+
+
+
+        <Route path="/philosopher/:id?" exact element={<InfoGrapics />}></Route>
+        <Route path="/add" exact element={<App />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

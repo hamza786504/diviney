@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./profile.css"
+import "./profileview.css"
 
 function ProfileView() {
 
