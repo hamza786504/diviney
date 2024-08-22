@@ -10,6 +10,7 @@ import Login from "./pages/Login.jsx";
 import Register from "./pages/register.jsx";
 import ProfileView from "./pages/admin/ProfileView.jsx";
 import ChatRoom from "./pages/admin/ChatRoom.jsx";
+import CreateCharacter from "./components/auth/createceracter.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -18,13 +19,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" exact element={<Home />}></Route>
         <Route path="/login" exact element={<Login />}></Route>
         <Route path="/register" exact element={<Register />}></Route>
-        <Route path="/admin/profileview" exact element={<ProfileView />}></Route>
+        <Route
+          path="/admin/profileview"
+          exact
+          element={<ProfileView />}
+        ></Route>
         <Route path="/admin/chatroom" exact element={<ChatRoom />}></Route>
-
+        <Route path="/createceracter" exact element={<CreateCharacter />} />
 
         <Route path="/404" exact element={<NotFound />}></Route>
-
-
 
         <Route path="/philosopher/:id?" exact element={<InfoGrapics />}></Route>
         <Route path="/add" exact element={<App />}></Route>

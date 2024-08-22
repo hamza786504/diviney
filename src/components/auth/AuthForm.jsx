@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const AuthForm = ({ type, showForm, setShowForm }) => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -36,6 +37,7 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
     if (validate()) {
       // Handle form submission
       console.log("Form submitted:", formData);
+      navigate("/createceracter");
     }
   };
 
@@ -157,6 +159,7 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
 
               <div>
                 <button
+                  onClick={handleSubmit}
                   type="submit"
                   className="w-full py-3 text-white rounded-full bg-gradient-to-r from-[#fc4a7a] via-[#7c70f8] to-[#02d7e0] hover:opacity-90"
                 >
