@@ -22,8 +22,10 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
     }
     if (!formData.email) newErrors.email = "Email is required";
     if (!formData.password) newErrors.password = "Password is required";
+    if (!formData.confirmPassword)
+      newErrors.confirmPassword = "confrim Password is required";
     if (type === "signup" && formData.password !== formData.confirmPassword) {
-      newErrors.confirmPassword = "Passwords must match";
+      newErrors.confirmPassword = "Passwords not match";
     }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
