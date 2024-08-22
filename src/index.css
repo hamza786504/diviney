@@ -62,10 +62,10 @@ footer li {
 .gradient-box {
   background: linear-gradient(
     to right,
-    #fa807c7a,
-    #9070b754,
-    #22a2e64f,
-    #3dcdee6e
+    #fa807c33,
+    #9070b736,
+    #22a2e62e,
+    #3dcdee4a
   );
   margin-bottom: 10px;
   border-radius: 0.375rem; /* Adjust border radius as needed */

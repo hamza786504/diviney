@@ -79,7 +79,7 @@ export default function Home() {
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  mb-6">
           Philosophers
         </h1>
-        <div className="grid  sm:grid-cols-12 md:grid-cols-4 lg:grid-cols-4 gap-2 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
           {Philosophers.map((card) => (
             <Card
               key={card.id}

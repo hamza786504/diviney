@@ -40,26 +40,32 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
   };
 
   return (
-    <div className="popup popup-bg" style={{ display: showForm ? "block" : "none" }}>
+    <div
+      className="popup popup-bg"
+      style={{ display: showForm ? "block" : "none" }}
+    >
       <div className="popup-content">
-        <div className="flex items-center justify-center ">
-          <div className="w-[500px] bg-white rounded-3xl shadow-lg p-8">
-            <button onClick={() => setShowForm(false)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                />
-              </svg>
-            </button>
+        <div className="flex items-center justify-center h-screen ">
+          <div className="w-[500px] bg-white rounded-3xl shadow-lg p-6">
+            <div className="flex justify-end">
+              <button onClick={() => setShowForm(false)}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </button>
+            </div>
+
             <h1 className="text-3xl font-bold text-center text-black">
               Diviney
             </h1>
