@@ -118,7 +118,7 @@ footer li {
 }
 
 .popup-bg {
-  background-image: url(./images/home/Blob.png);
+  background-image: url(./images/home/Blob.png) !important;
 }
 
 .popup-content {
