@@ -4,9 +4,7 @@ const Card = ({ name, description, imageUrl, isReligious }) => {
   return (
     <div className="relative group op rounded-xl overflow-hidden">
       <div
-        className={`p-3 py-4 overflow-hidden rounded-xl h-full transition-all duration-300 ease-in-out ${
-          isReligious ? "bg-theme-sky" : "bg-white"
-        } group-hover:bg-white   group-hover:after:content-[''] group-hover:after:absolute group-hover:after:inset-0 group-hover:after:bg-gradient-to-r group-hover:after:from-[#FA807C] group-hover:after:via-[#9070B7] group-hover:after:to-[#22A2E6] group-hover:after:opacity-15 group-hover:after:animate-wave group-hover:rounded-xl`}
+        className={`p-3 py-4 overflow-hidden rounded-xl h-full transition-all duration-300 ease-in-out bg-white group-hover:bg-white   group-hover:after:content-[''] group-hover:after:absolute group-hover:after:inset-0 group-hover:after:bg-gradient-to-r group-hover:after:from-[#FA807C] group-hover:after:via-[#9070B7] group-hover:after:to-[#22A2E6] group-hover:after:opacity-15 group-hover:after:animate-wave group-hover:rounded-xl`}
       >
         <span
           className={`p-3 inline-block rounded-full ${

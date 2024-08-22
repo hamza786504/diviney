@@ -40,9 +40,9 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
   };
 
   return (
-    <div className="popup" style={{ display: showForm ? "block" : "none" }}>
+    <div className="popup popup-bg" style={{ display: showForm ? "block" : "none" }}>
       <div className="popup-content">
-        <div className="flex items-center justify-center min-h-screen">
+        <div className="flex items-center justify-center ">
           <div className="w-[500px] bg-white rounded-3xl shadow-lg p-8">
             <button onClick={() => setShowForm(false)}>
               <svg

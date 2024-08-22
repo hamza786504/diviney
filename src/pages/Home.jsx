@@ -149,7 +149,7 @@ export default function Home() {
         </div> */}
         <div class="max-w-full mx-auto p-4 flex flex-col items-center">
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl w-full">
-            <div class="bg-gradient-to-r from-orange-400 to-pink-500 p-6 rounded-lg shadow-md flex ">
+            <div class="bg-gradient-to-r from-[#FF7847] to-[#aaaaa9f0] p-6 rounded-lg shadow-md flex ">
               <div>
                 <h2 className=" mb-2 font-bold">Philosophy Now </h2>
                 <p className="text-sm ">Chat with Philosopher</p>
@@ -159,7 +159,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="bg-gradient-to-r from-teal-400 to-cyan-500 p-6 rounded-lg shadow-md flex">
+            <div class="bg-gradient-to-r from-[#00DFDF] to-[#aaaaa9f0] p-6 rounded-lg shadow-md flex">
               <div>
                 <h2 className=" mb-2 font-bold">Philosophy Now </h2>
                 <p className="text-sm ">Chat with Philosopher</p>
@@ -169,7 +169,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="bg-gradient-to-r from-purple-500 to-indigo-500 p-6 rounded-lg shadow-md flex">
+            <div class="bg-gradient-to-r from-[#B165A5] to-[#aaaaa9f0] p-6 rounded-lg shadow-md flex">
               <div>
                 <h2 className=" mb-2 font-bold">Philosophy Now </h2>
                 <p className="text-sm ">Chat with Philosopher</p>
@@ -179,7 +179,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-6 rounded-lg shadow-md flex">
+            <div class="bg-gradient-to-r from-blue-500 to-[#1571DF] p-6 rounded-lg shadow-md flex">
               <div>
                 <h2 className=" mb-2 font-bold">Philosophy Now </h2>
                 <p className="text-sm ">Chat with Philosopher</p>
@@ -369,7 +369,7 @@ export default function Home() {
               <li>
                 <a href="https://socialmedia.com">
                   <img
-                    src="./images/home/Socialicons.png"
+                    src="./images/home/insta.png"
                     alt="SocialIcon2"
                     className="w-6 h-6"
                   />
@@ -378,7 +378,7 @@ export default function Home() {
               <li>
                 <a href="https://socialmedia.com">
                   <img
-                    src="./images/home/Socialicons.png"
+                    src="./images/home/linkedin.png"
                     alt="SocialIcon3"
                     className="w-6 h-6"
                   />
@@ -387,7 +387,7 @@ export default function Home() {
               <li>
                 <a href="https://socialmedia.com">
                   <img
-                    src="./images/home/Socialicons.png"
+                    src="./images/home/mail.png"
                     alt="SocialIcon4"
                     className="w-6 h-6"
                   />
