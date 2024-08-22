@@ -51,7 +51,7 @@ p {
   color: #120039;
 }
 footer {
-  background-image: url(./images/home/footer-bg.png);
+  background-color: linear-gradient(45deg, #fa807c, #9070b7, #22a2e6, #3dcdee);
 }
 footer li {
   margin-left: 25px;
@@ -102,6 +102,31 @@ footer li {
   -webkit-background-clip: text; /* Clip background to text */
   -webkit-text-fill-color: transparent; /* Make the text color transparent */
   background-clip: text; /* For Firefox */
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.851); /* Black background with 20% opacity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure the popup is above other content */
+}
+.popup-bg {
+  background-image: url(./images/home/Blob.png);
+}
+
+.popup-content {
+  /* background: white; */
+  padding: 20px;
+  border-radius: 8px;
+  /* width: 90%; */
+  /* max-width: 500px; */
+  position: relative;
 }
 
 @media screen and (max-width: 680px) {

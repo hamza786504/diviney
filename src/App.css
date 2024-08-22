@@ -30,28 +30,3 @@ body {
   background-clip: border-box; /* Clip the gradient to the border area */
   z-index: -1; /* Place the gradient behind the button content */
 }
-
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.851); /* Black background with 20% opacity */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000; /* Ensure the popup is above other content */
-}
-.popup-bg {
-  background-image: url(./images/home/Blob.png);
-}
-
-.popup-content {
-  /* background: white; */
-  padding: 20px;
-  border-radius: 8px;
-  /* width: 90%; */
-  /* max-width: 500px; */
-  position: relative;
-}

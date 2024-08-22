@@ -45,7 +45,7 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
       style={{ display: showForm ? "block" : "none" }}
     >
       <div className="popup-content">
-        <div className="flex items-center justify-center h-screen ">
+        <div className="flex items-center justify-center ">
           <div className="w-[500px] bg-white rounded-3xl shadow-lg p-6">
             <div className="flex justify-end">
               <button onClick={() => setShowForm(false)}>
