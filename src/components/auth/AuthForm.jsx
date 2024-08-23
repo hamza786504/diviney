@@ -48,7 +48,7 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
     >
       <div className="popup-content">
         <div className="flex items-center justify-center ">
-          <div className="w-[500px] bg-white rounded-3xl shadow-lg p-6">
+          <div className="w-[500px]  bg-gradient-to-r from-[#d0c4c7] via-[#dcdfed] to-[#bfdbe6] rounded-3xl shadow-lg p-6">
             <div className="flex justify-end">
               <button onClick={() => setShowForm(false)}>
                 <svg
@@ -79,7 +79,7 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
 
             <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
               {type === "signup" && (
-                <div>
+                <div className="relative">
                   <label className="sr-only" htmlFor="name">
                     Enter names
                   </label>
@@ -91,6 +91,7 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
                       onChange={handleChange}
                       className="w-full px-9 py-3 bg-[#f7fafc] rounded-lg border border-[#e2e8f0] text-[#2d3748] placeholder-[#a0aec0] focus:ring-2 focus:ring-[#4299e1] focus:outline-none"
                     />
+                    <i class="fa-regular fa-user absolute left-3 top-1/2 transform -translate-y-1/2 text-[#a0aec0]"></i>
                     {errors.name && (
                       <p className="text-red-500">{errors.name}</p>
                     )}
@@ -98,7 +99,7 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
                 </div>
               )}
 
-              <div>
+              <div className="relative">
                 <label className="sr-only" htmlFor="email">
                   Email address
                 </label>
@@ -111,13 +112,15 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
                     onChange={handleChange}
                     className="w-full px-9 py-3 bg-[#f7fafc] rounded-lg border border-[#e2e8f0] text-[#2d3748] placeholder-[#a0aec0] focus:ring-2 focus:ring-[#4299e1] focus:outline-none"
                   />
+                  <i class="fas fa-envelope absolute left-3 top-1/2 transform -translate-y-1/2 text-[#a0aec0]"></i>
+
                   {errors.email && (
                     <p className="text-red-500">{errors.email}</p>
                   )}
                 </div>
               </div>
 
-              <div>
+              <div className="relative">
                 <label className="sr-only" htmlFor="password">
                   Password
                 </label>
@@ -130,6 +133,8 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
                     onChange={handleChange}
                     className="w-full px-9 py-3 bg-[#f7fafc] rounded-lg border border-[#e2e8f0] text-[#2d3748] placeholder-[#a0aec0] focus:ring-2 focus:ring-[#4299e1] focus:outline-none"
                   />
+                  <i class="fas fa-lock absolute left-3 top-1/2 transform -translate-y-1/2 text-[#a0aec0]"></i>
+
                   {errors.password && (
                     <p className="text-red-500">{errors.password}</p>
                   )}
@@ -137,7 +142,7 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
               </div>
 
               {type === "signup" && (
-                <div>
+                <div className="relative">
                   <label className="sr-only" htmlFor="confirmPassword">
                     Confirm Password
                   </label>
@@ -150,6 +155,8 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
                       onChange={handleChange}
                       className="w-full px-9 py-3 bg-[#f7fafc] rounded-lg border border-[#e2e8f0] text-[#2d3748] placeholder-[#a0aec0] focus:ring-2 focus:ring-[#4299e1] focus:outline-none"
                     />
+                    <i class="fas fa-lock absolute left-3 top-1/2 transform -translate-y-1/2 text-[#a0aec0]"></i>
+
                     {errors.confirmPassword && (
                       <p className="text-red-500">{errors.confirmPassword}</p>
                     )}

@@ -105,12 +105,13 @@ footer li {
 }
 
 .popup {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  overflow: scroll;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.851); /* Black background with 20% opacity */
+  background: rgba(0, 0, 0, 0.95); /* Black background with 20% opacity */
   display: flex;
   align-items: center;
   justify-content: center;
