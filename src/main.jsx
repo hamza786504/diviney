@@ -11,6 +11,7 @@ import Register from "./pages/register.jsx";
 import ProfileView from "./pages/admin/ProfileView.jsx";
 import ChatRoom from "./pages/admin/ChatRoom.jsx";
 import CreateCharacter from "./components/auth/createceracter.jsx";
+import MyPersona from "./components/auth/mypersina.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -31,6 +32,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
         <Route path="/philosopher/:id?" exact element={<InfoGrapics />}></Route>
         <Route path="/add" exact element={<App />}></Route>
+        <Route path="/mypersona" exact element={<MyPersona />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

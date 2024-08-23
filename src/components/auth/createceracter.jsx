@@ -2,8 +2,9 @@ import React from "react";
 
 export default function createceracter() {
   return (
-    <div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-[#fc466b] via-[#3f5efb] to-[#23a6d5]">
-      <div class="bg-white rounded-xl shadow-lg p-6 w-[350px] md:w-[400px] lg:w-[450px]">
+    // bg-gradient-to-r from-[#fc466b] via-[#3f5efb] to-[#23a6d5]
+    <div class="flex popup popup-bg  items-center justify-center min-h-screen ">
+      <div class="bg-white popup-content rounded-xl shadow-lg p-6 w-[350px] md:w-[400px] lg:w-[450px]">
         <div class="flex items-center mb-4">
           <h1 class="text-lg font-semibold ml-3">Create your Figure</h1>
 
@@ -24,7 +25,10 @@ export default function createceracter() {
             class="w-full mb-3 p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:outline-none"
           />
           <select class="w-full mb-3 p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            <option>Select Category</option>
+            <option>Select Category 1</option>
+            <option>Select Category 2</option>
+            <option>Select Category 3</option>
+            <option>Select Category 4 </option>
           </select>
           <input
             type="text"
@@ -43,7 +47,7 @@ export default function createceracter() {
           />
           <button
             type="submit"
-            class="w-full p-3 text-white rounded-lg bg-gradient-to-r from-[#fc466b] to-[#3f5efb] hover:from-[#ff5e7b] hover:to-[#4f6eff]"
+            class="w-full p-3 text-white rounded-lg bg-gradient-to-r from-[#fc466ba6] to-[#3f5efb8c] hover:from-[#ff5e7b] hover:to-[#4f6eff]"
           >
             Create Figure
           </button>
