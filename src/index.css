@@ -103,6 +103,16 @@ footer li {
   -webkit-text-fill-color: transparent; /* Make the text color transparent */
   background-clip: text; /* For Firefox */
 }
+.card-bg {
+  background: linear-gradient(
+    to right,
+    #ffa7a7a1 0%,
+    6.590908765792847%,
+    #e2919dc5 13.181817531585693%,
+    56.59090876579285%,
+    #76ffffab 100%
+  );
+}
 
 .popup {
   position: absolute;
@@ -111,7 +121,7 @@ footer li {
   right: 0;
   overflow: scroll;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.95); /* Black background with 20% opacity */
+  background: rgba(0, 0, 0, 90%); /* Black background with 20% opacity */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -48,7 +48,7 @@ const AuthForm = ({ type, showForm, setShowForm }) => {
     >
       <div className="popup-content">
         <div className="flex items-center justify-center ">
-          <div className="w-[500px]  bg-gradient-to-r from-[#d0c4c7] via-[#dcdfed] to-[#bfdbe6] rounded-3xl shadow-lg p-6">
+          <div className="w-[500px] card-bg rounded-3xl shadow-lg p-6">
             <div className="flex justify-end">
               <button onClick={() => setShowForm(false)}>
                 <svg
